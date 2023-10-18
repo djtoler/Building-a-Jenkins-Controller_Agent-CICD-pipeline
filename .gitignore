@@ -1,0 +1,5 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+5.1_kp.pem
