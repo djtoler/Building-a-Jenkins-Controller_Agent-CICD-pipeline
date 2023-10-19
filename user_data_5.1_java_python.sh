@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Download the Java, Python & AWS installation scripts
-sudo apt install -y default-jre
+sudo apt install default-jre -y
 curl -O https://raw.githubusercontent.com/djtoler/automated_installation_scripts/main/auto-python.sh
 curl -O https://raw.githubusercontent.com/djtoler/automated_installation_scripts/main/auto-aws_cli.sh
 
