@@ -22,6 +22,13 @@ resource "aws_subnet" "subnet_2" {
   map_public_ip_on_launch = var.public_ip
 }
 
+resource "aws_subnet" "subnet_3" {
+  vpc_id                  = aws_vpc.main.id
+  cidr_block              = var.subnet_cidr_block_c
+  availability_zone       = var.availability_zone_c
+  map_public_ip_on_launch = var.public_ip
+}
+
 resource "aws_security_group" "dp5_sg" {
   vpc_id = aws_vpc.main.id
 
@@ -81,7 +88,7 @@ resource "aws_instance" "ec2_instance_2" {
 resource "aws_instance" "ec2_instance_3" {
   ami                             = var.ec2_ami_id
   instance_type                   = var.ec2_instance_type
-  subnet_id                       = aws_subnet.subnet_1.id
+  subnet_id                       = aws_subnet.subnet_3.id
   security_groups                 = [aws_security_group.dp5_sg.id]
   tags                            = var.ec2_instance_tag_3
   user_data                       = base64encode(file(var.ud_py_java))
@@ -111,5 +118,11 @@ resource "aws_route_table_association" "b" {
   subnet_id      = aws_subnet.subnet_2.id
   route_table_id = aws_route_table.main.id
 }
+
+resource "aws_route_table_association" "c" {
+  subnet_id      = aws_subnet.subnet_3.id
+  route_table_id = aws_route_table.main.id
+}
+
 
 

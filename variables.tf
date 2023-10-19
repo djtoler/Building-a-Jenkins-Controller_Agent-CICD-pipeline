@@ -8,8 +8,10 @@ variable "df_cidr_block_anywhere"   {}
 variable "vpc_cidr_block"           {}
 variable "subnet_cidr_block_a"      {}
 variable "subnet_cidr_block_b"      {}
+variable "subnet_cidr_block_c"      {}
 variable "availability_zone_a"      {}
 variable "availability_zone_b"      {}
+variable "availability_zone_c"      {}
 variable "public_ip"                {}
 
 #Set variables for instances
