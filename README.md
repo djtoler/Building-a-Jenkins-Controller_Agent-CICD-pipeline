@@ -12,7 +12,7 @@
 #### In the diagram below, in public subnet A, we have our Jenkins server for CICD and in public subnet B, we have our Banking application serever. 
 
 <p align="center">
-<img src="https://github.com/djtoler/Deployment5_v1/blob/main/dp5Diagram2.png">
+<img src="https://github.com/djtoler/Deployment5_v1/blob/main/dp5Diagram2.png" width"700">
 </p>
 
 #### This is a step in the right direction of building more resilience into our system because if our application fails, we still have our Jenkins server available to quickly redeploy. Or if our application server fails, Terraform can quickly deploy new resources and infrastructre.
