@@ -48,9 +48,49 @@
 
 #### Configure Jenkins server
 * ##### _The installations needed to run our Jenkins server & our application were installed in our userdata script during our infrastructure deployment_
+
+```
+#!/bin/bash
+
+#Download the Jenkins, Python & AWS installation scripts
+curl -O https://raw.githubusercontent.com/djtoler/automated_installation_scripts/main/auto-jenkins.sh
+curl -O https://raw.githubusercontent.com/djtoler/automated_installation_scripts/main/auto-python.sh
+curl -O https://raw.githubusercontent.com/djtoler/automated_installation_scripts/main/auto-aws_cli.sh
+
+#Make the scripts executable
+chmod +x auto-jenkins.sh
+chmod +x auto-python.sh
+chmod +x auto-aws_cli.sh
+
+#Run the Jenkins, Python & AWS installation scripts
+./auto-jenkins.sh
+./auto-python.sh
+./auto-aws_cli.sh
+```
   
 #### Configure & run application server 1 & 2
 * ##### _The installations needed to run our application were installed in our userdata script during our infrastructure deployment_
+```
+#!/bin/bash
+
+#Update apt
+sudo apt update
+
+
+#Download the Java, Python & AWS installation scripts
+sudo apt install -y default-jre
+curl -O https://raw.githubusercontent.com/djtoler/automated_installation_scripts/main/auto-python.sh
+curl -O https://raw.githubusercontent.com/djtoler/automated_installation_scripts/main/auto-aws_cli.sh
+
+
+#Make the scripts executable
+chmod +x auto-python.sh
+chmod +x auto-aws_cli.sh
+
+#Run the Java, Python & AWS installation scripts
+./auto-python.sh
+./auto-aws_cli.sh
+```
 * ##### _Next, we install the Jenkins agent on our both application servers by following these steps._
 ```
     Select "Build Executor Status"
