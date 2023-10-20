@@ -66,7 +66,7 @@
     Click dropdown menu and select "snon verifying verification strategy"
     Click save & check in Jenkins UI for a successful installation by clicking "Log"
 ```
-* #### _Now we create a MultiBranch pipeline by foloowing these steps in the link below_
+* #### _Now we create a MultiBranch pipeline by following these steps in the link below_
 ```
 https://github.com/djtoler/automated_installation_scripts/blob/main/manual_jenkins_multi_branch.txt
 ```
