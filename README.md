@@ -71,13 +71,13 @@
 https://github.com/djtoler/automated_installation_scripts/blob/main/manual_jenkins_multi_branch.txt
 ```
 
-| Jenkins Server: Main Branch         | Application Server1: Dev1 Branch    | Application Server2: Dev2 Branch |
+| Main Branch                         | Application Server1: Dev1 Branch    | Application Server2: Dev2 Branch |
 | ----------------------------------- | ----------------------------------- | --------------------------------- |
 | ![aaaaaa.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/mainsuc.PNG) | ![aaaaaa.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/dev1suc.PNG) | ![aasaaaa](https://github.com/djtoler/Deployment5.1/blob/main/assets/dev2suc.PNG) |
 
-
+* #### After successfully running our MultiBranch pipeline, we can visit our Banking applications from both IP addresses 
 ---
-| Application Server1: Banking App    | Application Server2: Banking App                      |
+| Application Server1: Banking App    | Application Server2: Banking App    |
 | ----------------------------------- | ----------------------------------- |
 | ![aaafrrfaaa.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/banksucdev1.PNG) | ![aaaaaa.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/banksucdev2.PNG) | 
 
