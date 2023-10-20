@@ -43,7 +43,7 @@
 #### Configure and deploy infastructure using Terraform
 * ##### _1 VPC, 2 Availability Zones, 2 Public Subnets, 3 EC2s, 1 Route Table_
 <p align="center">
-<img src="https://github.com/djtoler/Deployment5_v1/blob/main/dp5Diagram2.png">
+<img src="https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1InfastructureRequirements.png">
 </p>
 
 #### Configure Jenkins server
