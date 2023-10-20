@@ -1,3 +1,9 @@
+# Deployment 5.1
+
+<p align="center">
+<img src="https://github.com/djtoler/Deployment5.1/blob/main/assets/5.1cover.png">
+</p>
+
 ## Purpose
 
 #### The prupose of this deployment was to evolve banking applications infrastructure system design. In Deployment 5, we decoupled our application and Jenkins server, partially solving the single point of failure problem. We also solved the problem of slow, error prone, manual infrastructre deployment by using Terraform (an Infrastructure As Code tool). 
@@ -76,13 +82,12 @@ https://github.com/djtoler/automated_installation_scripts/blob/main/manual_jenki
 | ![aaaaaa.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/mainsuc.PNG) | ![aaaaaa.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/dev1suc.PNG) | ![aasaaaa](https://github.com/djtoler/Deployment5.1/blob/main/assets/dev2suc.PNG) |
 
 * #### After successfully running our MultiBranch pipeline, we can visit our Banking applications from both IP addresses 
----
+
 | Application Server1: Banking App    | Application Server2: Banking App    |
 | ----------------------------------- | ----------------------------------- |
 | ![aaafrrfaaa.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/banksucdev1.PNG) | ![aaaaaa.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/banksucdev2.PNG) | 
 
-
-
+---
 
 System Diagram
 
