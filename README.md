@@ -22,13 +22,13 @@
 
 ## Issues
 > ### Issue 1: _After trying to format the Jenkins file, we run into a error that I havent seen before and couldnt intuitivly get a idea of what the message meant.
-> #### `WorkflowScript: 7: expecting ''', found '\r' @ line 7, column 21. #!/bin/bash`_
-* #### Solution: Reformatted Jenkins file back to its original state to speed up deploying the application
-* #### Takeaway: I later found that somehow a single quotes was deleted during the formatting
+> ##### `WorkflowScript: 7: expecting ''', found '\r' @ line 7, column 21. #!/bin/bash`_
+* ##### Solution: Reformatted Jenkins file back to its original state to speed up deploying the application
+* ##### Takeaway: I later found that somehow a single quotes was deleted during the formatting
 
 > ### Issue 2: _There was an error when we initially tried to install our Jenkins agents on the application servers using [`sudo apt install default-jre`](https://ubuntu.com/tutorials/install-jre#2-installing-openjdk-jre) in our userdata script_  
-* #### Solution: Manually install the Java Runtime Env because the installation failed when we tried to install it with our userdata script or use the Java installation script from Deployment 5
-* #### Takeaway: We found out later that running `sudo apt update` fixes our issue and allows us to successfully install out Jenkins agents
+* ##### Solution: Manually install the Java Runtime Env because the installation failed when we tried to install it with our userdata script or use the Java installation script from Deployment 5
+* ##### Takeaway: We found out later that running `sudo apt update` fixes our issue and allows us to successfully install out Jenkins agents
 
 
 ## Steps
