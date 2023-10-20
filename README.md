@@ -34,7 +34,11 @@
 * ##### Solution: Reformatted Jenkins file back to its original state to speed up deploying the application
 * ##### Takeaway: I later found that somehow a single quotes was deleted during the formatting
 
-### Issue 2: There was an error when we initially tried to install our Jenkins agents on the application servers using [`sudo apt install default-jre`](https://ubuntu.com/tutorials/install-jre#2-installing-openjdk-jre) in our userdata script  
+### Issue 2: There was an error when we initially tried to install our Jenkins agents on the application servers using [`sudo apt install default-jre`](https://ubuntu.com/tutorials/install-jre#2-installing-openjdk-jre) in our userdata script
+<p align="center">
+<img src="https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1agenterror.PNG">
+</p>
+
 * ##### Solution: Manually install the Java Runtime Env because the installation failed when we tried to install it with our userdata script or use the Java installation script from Deployment 5
 * ##### Takeaway: We found out later that running `sudo apt update` fixes our issue and allows us to successfully install out Jenkins agents
 
