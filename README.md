@@ -19,6 +19,7 @@
 
 #### Utilizing Jenkins agents move us towards a more distributed system architecture, spreading our build/deploy jobs out to nodes that are controlled by our Jenkins server. This distributed approach makes our systems CICD pipeline faster (running builds at the same time) and more reliable because jobs can failover to other agents.
 
+---
 
 ## Issues
 > ### Issue 1: After trying to format the Jenkins file, we run into a error that I havent seen before and couldnt intuitivly get a idea of what the message meant.
