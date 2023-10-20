@@ -71,7 +71,15 @@
 https://github.com/djtoler/automated_installation_scripts/blob/main/manual_jenkins_multi_branch.txt
 ```
 
+| Jenkins Server: Main Branch         | Application Server2: Dev1 Branch    | Application Server2: Dev2 Branch |
+| ----------------------------------- | ----------------------------------- | ------------------- |
+| ![aaaaaa.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/mainsuc.PNG) | ![aaaaaa.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/dev1suc.PNG) | [aasaaaa](https://github.com/djtoler/Deployment5.1/blob/main/assets/dev2suc.PNG) |
 
+
+---
+| Wrong Payload URL                   | 403 Error Code                      |
+| ----------------------------------- | ----------------------------------- |
+| ![aaaaaa.png](https://github.com/djtoler/Deployment3____AWSBeanstalk_Jenkins/blob/main/assets/webhookpayloadwrong.png) | ![aaaaaa.png](https://github.com/djtoler/Deployment3____AWSBeanstalk_Jenkins/blob/main/assets/dp3_webhookfail.PNG) | 
 
 
 
@@ -79,7 +87,7 @@ https://github.com/djtoler/automated_installation_scripts/blob/main/manual_jenki
 System Diagram
 
 <p align="center">
-<img src="https://github.com/djtoler/Deployment5.1/blob/main/dp5.1Diagram.drawio.png">
+<img src="https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1Diagram.drawio%20(1).png">
 </p>
 
 <p align="center">
