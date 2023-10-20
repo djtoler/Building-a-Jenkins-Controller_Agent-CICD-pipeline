@@ -35,7 +35,7 @@
 * ##### Takeaway: I later found that somehow a single quotes was deleted during the formatting
 
 ### Issue 2: There was an error when we initially tried to install our Jenkins agents on the application servers using [`sudo apt install default-jre`](https://ubuntu.com/tutorials/install-jre#2-installing-openjdk-jre) in our userdata script
-<p align="center">
+<p align="left">
 <img src="https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1agenterror.PNG">
 </p>
 
