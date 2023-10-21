@@ -17,7 +17,7 @@
 
 #### However, our system is still lacking reliability because even though it can quickly recover from a failure, it isn’t designed to avoid a failure. Each instance performs a different task that’s required for our system to function the way we intend for it to. But if one of those instances goes down, our customers may not be able to do any banking transactions. 
 
-#### Deployment 5.1 helps to solve some of this problem by deploying 2 application instances, both with Jenkins agents. 
+### Deployment 5.1 helps to solve some of this problem by deploying 2 application instances, both with Jenkins agents. 
 
 #### The 2 application instances makes our system more reliable by giving us an additional server that can be used as a backup to serve user requests of one fails. 
 #### Utilizing Jenkins agents moves us towards a more distributed system architecture, spreading our build/deploy jobs out to nodes that are controlled by our Jenkins server. This distributed approach makes our systems CICD pipeline... 
