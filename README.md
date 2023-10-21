@@ -55,13 +55,18 @@
 
 
 ## Steps
-#### Configure and deploy infastructure using Terraform
+#### 1) Configure and deploy infastructure using Terraform
 * ##### _1 VPC, 2 Availability Zones, 2 Public Subnets, 3 EC2s, 1 Route Table_
-<p align="center">
-<img src="https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1Infrastructurerequirements.png">
-</p>
 
-#### Configure Jenkins server
+| variables.tf        -->             | terraform.tfvars            -->     | main.tf               -->         |
+| ----------------------------------- | ----------------------------------- | --------------------------------- |
+| ![aaaaaa.png](https://github.com/djtoler/Deployment5_v1/blob/main/Screenshot%202023-10-15%20at%201.04.23%20PM.png) | ![aaaaaa.png](https://github.com/djtoler/Deployment5_v1/blob/main/image6-3.png") | ![aasaaaa](https://github.com/djtoler/Deployment5_v1/blob/main/Screenshot%202023-10-15%20at%201.59.34%20PM.png") |
+
+| tf_deploy.sh      -->               | Deployment 5.1 Infrastructure       |
+| ----------------------------------- | ----------------------------------- |
+| ![aaafrrfaaa.png](https://github.com/djtoler/Deployment5_v1/blob/main/dp5_tf_auto.png) | ![aaaaaa.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1Infrastructurerequirements.png) | 
+
+#### 2) Configure Jenkins server
 * ##### _The installations needed to run our Jenkins server & our application were installed in our userdata script during our infrastructure deployment_
 
 ```
@@ -83,7 +88,7 @@ chmod +x auto-aws_cli.sh
 ./auto-aws_cli.sh
 ```
   
-#### Configure & run application server 1 & 2
+#### 3) Configure & run application server 1 & 2
 * ##### _The installations needed to run our application were installed in our userdata script during our infrastructure deployment_
 ```
 #!/bin/bash
