@@ -60,7 +60,7 @@
 
 | variables.tf        -->             | terraform.tfvars            -->     | main.tf               -->         |
 | ----------------------------------- | ----------------------------------- | --------------------------------- |
-| ![aaaaaa.png](https://github.com/djtoler/Deployment5_v1/blob/main/Screenshot%202023-10-15%20at%201.04.23%20PM.png) | ![aaaaaa.png](https://github.com/djtoler/Deployment5_v1/blob/main/image6-3.png") | ![aasaaaa](https://github.com/djtoler/Deployment5_v1/blob/main/Screenshot%202023-10-15%20at%201.59.34%20PM.png") |
+| ![aaaaaa.png](https://github.com/djtoler/Deployment5_v1/blob/main/Screenshot%202023-10-15%20at%201.04.23%20PM.png) | ![aaaaaa.png](https://github.com/djtoler/Deployment5_v1/blob/main/image6-3.png) | ![aasaaaa](https://github.com/djtoler/Deployment5_v1/blob/main/Screenshot%202023-10-15%20at%201.59.34%20PM.png) |
 
 | tf_deploy.sh      -->               | Deployment 5.1 Infrastructure       |
 | ----------------------------------- | ----------------------------------- |
