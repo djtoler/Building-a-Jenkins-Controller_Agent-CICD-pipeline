@@ -58,11 +58,11 @@
 #### 1) Configure and deploy infastructure using Terraform
 * ##### _1 VPC, 2 Availability Zones, 2 Public Subnets, 3 EC2s, 1 Route Table_
 
-| variables.tf        -->             | terraform.tfvars            -->     | main.tf               -->         |
+| 1) variables.tf                     | 2) terraform.tfvars                 | 3) main.tf                        |
 | ----------------------------------- | ----------------------------------- | --------------------------------- |
 | ![aaaaaa.png](https://github.com/djtoler/Deployment5_v1/blob/main/Screenshot%202023-10-15%20at%201.04.23%20PM.png) | ![aaaaaa.png](https://github.com/djtoler/Deployment5_v1/blob/main/image6-3.png) | ![aasaaaa](https://github.com/djtoler/Deployment5_v1/blob/main/Screenshot%202023-10-15%20at%201.59.34%20PM.png) |
 
-| tf_deploy.sh      -->               | Deployment 5.1 Infrastructure       |
+| 4) tf_deploy.sh                     | 5) Deployment 5.1 Infrastructure    |
 | ----------------------------------- | ----------------------------------- |
 | ![aaafrrfaaa.png](https://github.com/djtoler/Deployment5_v1/blob/main/dp5_tf_auto.png) | ![aaaaaa.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1Infrastructurerequirements.png) | 
 
