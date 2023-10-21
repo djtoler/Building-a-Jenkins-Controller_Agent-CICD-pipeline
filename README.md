@@ -159,11 +159,16 @@ https://github.com/djtoler/automated_installation_scripts/blob/main/manual_jenki
 ---
 
 ## Optimization
-* #### Move the all of instances into private subnets(security)
+* #### Move the all of our instances into private subnets(security)
+    * ##### With the data sensitivity of a Banking application, anything that isnt a html/css/javascript/image file should be on a instance in a private subnet 
 * #### Use a different relational database & seperate it from the application(security)
+    * ##### SQLite has limited features and operates with our application, making our users data too vulnerable  
 * #### Seperate the application logic, business logic & database logic and pass data between modules & servers(scalability, optimization)
+    * ##### Example: Our code routes users requests(application logic), runs calculations to deposit/withdraw funds(business logic) & executes database transations(database logic) all in our app.py file. During the upcoming holiday season our number of transactions will multiply. Our application server may be able to handle a 100k GET requests per minute to pass data but our business logic server wont be able to process 100K calculations as easily. If our code was logically isolated on different servers, we could just horizontally auto-scale our business logic instance to support CPU intensive days.  
 * #### Load balance between Application server 1 and Application server 2 (performance, reliability)
+    * ##### This would distribute the load our application would recieve....  
 * #### Seperate Application server 1 and Application server 2 into different Availability Zones (availability)
 * #### Implement a CDN for the CSS/HTML/JavaScript files that are in the static & templates directories (performance)
 * #### Cache user profile data
+    * ##### To retieve users data like names, email addresses, account balances faster and lighten the read load on our database 
 
