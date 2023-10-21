@@ -29,6 +29,14 @@
 | ----------------------------------- | ----------------------------------- |
 | ![aaafrrfaaa.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1-5purposediagram.png) | ![aaaaaa.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1purposediagram.png) | 
 
+#### We also get a security benifit from using our Jenkins agents to SSH into our server as opposed to using our Jenkinsfile to SSH into our server like we did for Deployment 5.
+#### Since our SSH task was in the Clean, Build and Deploy stages of our Jenkinsfile in our last deployment, we need that key everytime we redeploy our application.
+#### Using Jenkins agents, we wont need to utilize the key for every redeployment because the agent will have the key stored with it while its on our instance. Reducing the use of the key reduces the possibility of it being compromised.
+
+| Deployment 5 SSH Key Access         | Deployment 5.1 SSH Key Access    |
+| ----------------------------------- | ----------------------------------- |
+| ![aaafrrfaaa.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5sshk2.drawio.png) | ![aaaaaa.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1ssh2.png) | 
+
 ---
 
 ## Issues
@@ -137,7 +145,7 @@ https://github.com/djtoler/automated_installation_scripts/blob/main/manual_jenki
 
 ---
 
-System Diagram
+## System Diagram
 
 <p align="center">
 <img src="https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1Diagram.drawio%20(1).png">
@@ -145,5 +153,12 @@ System Diagram
 
 ---
 
-Optimization
+## Optimization
+* #### Move the all of instances into private subnets(security)
+* #### Use a different relational database & seperate it from the application(security)
+* #### Seperate the application logic, business logic & database logic and pass data between modules & servers(scalability, optimization)
+* #### Load balance between Application server 1 and Application server 2 (performance, reliability)
+* #### Seperate Application server 1 and Application server 2 into different Availability Zones (availability)
+* #### Implement a CDN for the CSS/HTML/JavaScript files that are in the static & templates directories (performance)
+* #### Cache user profile data
 
