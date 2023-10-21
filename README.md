@@ -11,8 +11,8 @@
 
 #### In the diagram below, public subnet A has have our Jenkins server for CICD and in public subnet B, we have our Banking application server. 
 
-<p align="center">
-<img src="https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1-5purposediagram.png" height="75%">
+<p style="text-align:center;">
+    <img src="https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1-5purposediagram.png" style="height:75%;">
 </p>
 
 #### This is a step in the right direction of building more resilience into our system because if our application fails, we still have our Jenkins server & Terraform available to quickly redeploy. Or if our application server fails, Terraform can quickly deploy new resources and infrastructre.
@@ -26,9 +26,10 @@
 * ##### <u>Faster</u> (running builds at the same time)
 * ##### <u>More Reliable</u> (jobs can easily failover to other agents if configured and [labeled to do so](https://github.com/djtoler/Deployment5.1/blob/main/assets/jenkinslabels.PNG))
 * ##### <u>More Flexible</u> (agents can be assigned to instances based on type of workload.  _exp: if our Banking application used analytics & our pipeline had a test stage that ran computationally intensive verification scripts, we can install that agent on a [CPU optimized EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/compute-optimized-instances.html) to control our job durations_)
-<p align="left">
-<img src="https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1purposediagram.png">
-</p>
+
+| Deployment 5 Infrastructure (_Single Points of Failure_)         | Deployment 5.1 Infrastructure (_Fault Tolerance_)    |
+| ----------------------------------- | ----------------------------------- |
+| ![aaafrrfaaa.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1-5purposediagram.png) | ![aaaaaa.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1purposediagram.png) | 
 
 ---
 
