@@ -6,10 +6,10 @@
 
 ## Purpose
 
-#### The prupose of this deployment was to evolve banking applications infrastructure system design. In Deployment 5, we decoupled our application and Jenkins server, partially solving the single point of failure problem. We also solved the problem of slow, error prone, manual infrastructre deployment by using Terraform (an Infrastructure As Code tool). 
+#### The prupose of this deployment was to evolve our banking applications infrastructure system design. In Deployment 5, we decoupled our application and Jenkins server, partially solving the single point of failure problem. We also solved the problem of slow, error prone, manual infrastructre deployment by using Terraform (an Infrastructure As Code tool). 
 #### While this increased the speed and consistency of our infrastructure deployment, our system design still needed improvements.
 
-#### In the diagram below, in public subnet A, we have our Jenkins server for CICD and in public subnet B, we have our Banking application serever. 
+#### In the diagram below, public subnet A has have our Jenkins server for CICD and in public subnet B, we have our Banking application serever. 
 
 <p align="center">
 <img src="https://github.com/djtoler/Deployment5_v1/blob/main/dp5Diagram2.png" width="75%">
@@ -24,7 +24,13 @@
 
 #### The 2 application instances makes our system more reliable by giving us an additional server that can be used as a backup to serve user requests of one fails. 
 
-#### Utilizing Jenkins agents move us towards a more distributed system architecture, spreading our build/deploy jobs out to nodes that are controlled by our Jenkins server. This distributed approach makes our systems CICD pipeline faster (running builds at the same time) and more reliable because jobs can failover to other agents.
+#### Utilizing Jenkins agents moves us towards a more distributed system architecture, spreading our build/deploy jobs out to nodes that are controlled by our Jenkins server. This distributed approach makes our systems CICD pipeline... 
+* ##### <u>Faster</u> (running builds at the same time)
+* ##### <u>More Reliable</u> (jobs can easily failover to other agents if configured and [labeled to do so](https://github.com/djtoler/Deployment5.1/blob/main/assets/jenkinslabels.PNG))
+* ##### <u>More Flexible</u> (agents can be assigned to instances based on type of workload.  _exp: if our Banking application used analytics & our pipeline had a test stage that ran computationally intensive verification scripts, we can install that agent on a [CPU optimized EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/compute-optimized-instances.html) to control our job durations_)
+<p align="left">
+<img src="https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1purposediagram.png">
+</p>
 
 ---
 
