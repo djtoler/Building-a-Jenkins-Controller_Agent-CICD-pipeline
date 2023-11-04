@@ -176,7 +176,7 @@ https://github.com/djtoler/automated_installation_scripts/blob/main/manual_jenki
 
 |#| Step   | Jenkinsfile  | Terraform  |
 |---|---|---|---|
-|1. | Jenkins agent on Docker instance starts working pipeline  | ![a.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1agenterror.PNG)  |![a.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1ssh2.png)   |
+|1. | Jenkins agent on Docker instance starts working pipeline  | ![a.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1agenterror.PNG)  | |
 |2. | DockerHub credentials set in Jenkins enviornment  | ![a.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5ssh.PNG)  | ![a.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/jenkinslabels.PNG)   |
 |3. | Test stage ran on Docker instance  |   |   |
 |4. |   |   |   |
