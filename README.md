@@ -170,5 +170,17 @@ https://github.com/djtoler/automated_installation_scripts/blob/main/manual_jenki
 * #### Seperate Application server 1 and Application server 2 into different Availability Zones (availability)
 * #### Implement a CDN for the CSS/HTML/JavaScript files that are in the static & templates directories (performance)
 * #### Cache our users profile data
-    * ##### _To retieve users data like names, email addresses, account balances faster and lighten the read load on our database_ 
+    * ##### _To retieve users data like names, email addresses, account balances faster and lighten the read load on our database_
+    * 
+
+
+|#| Step   | Jenkinsfile  | Terraform  |
+|---|---|---|---|
+|1. | Jenkins agent on Docker instance starts working pipeline  | ![a.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1agenterror.PNG)  |![a.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5.1ssh2.png)   |
+|2. | DockerHub credentials set in Jenkins enviornment  | ![a.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/dp5ssh.PNG)  | ![a.png](https://github.com/djtoler/Deployment5.1/blob/main/assets/jenkinslabels.PNG)   |
+|3. | Test stage ran on Docker instance  |   |   |
+|4. |   |   |   |
+||   |   |   |
+||   |   |   |
+||   |   |   |
 
